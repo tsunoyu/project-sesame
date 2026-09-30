@@ -47,6 +47,7 @@
     "/fedcm-active-mode",
     "/fedcm-passive-mode",
     "/immediate-ui-mode",
+    "/passive-ui-mode",
     "/home",
     "/settings/passkeys",
     "/settings/password-change",

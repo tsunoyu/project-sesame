@@ -457,6 +457,17 @@ app.get(
 );
 
 app.get(
+  '/passive-ui-mode',
+  pageAclCheck(PageType.NoAuth),
+  (req: Request, res: Response): void => {
+    res.render('passive-ui-mode.html', {
+      title: 'Passive UI mode (Conditional UI without autofill)',
+      hide_drawer: true,
+    });
+  }
+);
+
+app.get(
   '/legacy-credman',
   pageAclCheck(PageType.SignIn),
   (req: Request, res: Response): void => {
